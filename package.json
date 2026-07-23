@@ -26,7 +26,7 @@
     "package": "npm pack --dry-run"
   },
   "devDependencies": {
-    "@iobroker/testing": "5.2.2",
+    "@iobroker/testing": "^5.2.2",
     "@types/node": "^22.0.0"
   }
 }

@@ -71,3 +71,24 @@ The adapter currently supports Linux on x64 and ARM64. At least 450 MiB of free 
 - [Eclipse Adoptium](https://adoptium.net/)
 
 OpenEMS and its bundled components retain their respective upstream licenses. This adapter itself is licensed under the MIT License.
+
+## Changelog
+
+### 0.1.2
+
+- Managed installation of official OpenEMS Edge 2026.7.0 and OpenEMS UI
+- Managed Eclipse Temurin Java 21 runtime
+- Minimal official Core, Scheduler and Websocket configuration
+- Start, stop, restart and update controls
+- ioBroker Admin instance link and runtime status data points
+- Linux x64 and ARM64 support
+
+See [CHANGELOG.md](CHANGELOG.md) for the complete development history.
+
+## License
+
+MIT License
+
+Copyright (c) 2026 TheBam
+
+See [LICENSE](LICENSE) for the complete license text.

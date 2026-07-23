@@ -71,3 +71,24 @@ Der Adapter unterstützt derzeit Linux auf x64 und ARM64. Vor der Installation m
 - [Eclipse Adoptium](https://adoptium.net/)
 
 OpenEMS und enthaltene Komponenten behalten ihre jeweiligen Upstream-Lizenzen. Der ioBroker-Adapter selbst steht unter der MIT-Lizenz.
+
+## Changelog
+
+### 0.1.2
+
+- Verwaltete Installation von OpenEMS Edge 2026.7.0 und OpenEMS UI
+- Eigene Eclipse-Temurin-Java-21-Laufzeit
+- Minimale offizielle Core-, Scheduler- und Websocket-Konfiguration
+- Start-, Stop-, Neustart- und Aktualisierungssteuerung
+- Instanzlink und Laufzeitdatenpunkte im ioBroker-Admin
+- Unterstützung für Linux x64 und ARM64
+
+Die vollständige Entwicklungshistorie steht in [CHANGELOG.md](CHANGELOG.md).
+
+## Lizenz
+
+MIT-Lizenz
+
+Copyright (c) 2026 TheBam
+
+Der vollständige Lizenztext steht in [LICENSE](LICENSE).
