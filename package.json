@@ -5,7 +5,7 @@
   "author": "TheBam",
   "license": "MIT",
   "main": "main.js",
-  "engines": { "node": ">=20" },
+  "engines": { "node": ">=22" },
   "keywords": ["ioBroker", "OpenEMS", "energy management", "OpenEMS Edge"],
   "homepage": "https://github.com/TheBam1990/ioBroker.openems",
   "repository": {
@@ -17,11 +17,16 @@
   },
   "files": ["admin", "io-package.json", "main.js", "README.md", "README_DE.md", "CHANGELOG.md", "LICENSE"],
   "dependencies": {
-    "@iobroker/adapter-core": "^3.3.2"
+    "@iobroker/adapter-core": "^3.4.1"
   },
   "scripts": {
     "test": "node --test test/*.test.js",
     "check": "node --check main.js && node --test test/*.test.js",
+    "lint": "node --check main.js",
     "package": "npm pack --dry-run"
+  },
+  "devDependencies": {
+    "@iobroker/testing": "5.2.2",
+    "@types/node": "^22.0.0"
   }
 }

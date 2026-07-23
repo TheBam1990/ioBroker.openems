@@ -2,10 +2,47 @@
   "common": {
     "name": "openems",
     "version": "0.1.2",
-    "titleLang": { "en": "OpenEMS", "de": "OpenEMS" },
+    "titleLang": {
+      "en": "OpenEMS",
+      "de": "OpenEMS",
+      "ru": "OpenEMS",
+      "pt": "OpenEMS",
+      "nl": "OpenEMS",
+      "fr": "OpenEMS",
+      "it": "OpenEMS",
+      "es": "OpenEMS",
+      "pl": "OpenEMS",
+      "uk": "OpenEMS",
+      "zh-cn": "OpenEMS"
+    },
     "desc": {
       "en": "One-click installation, operation and monitoring of OpenEMS Edge and OpenEMS UI",
-      "de": "Ein-Klick-Installation, Betrieb und Überwachung von OpenEMS Edge und OpenEMS UI"
+      "de": "Ein-Klick-Installation, Betrieb und Überwachung von OpenEMS Edge und OpenEMS UI",
+      "ru": "Установка, эксплуатация и мониторинг OpenEMS Edge и OpenEMS UI",
+      "pt": "Instalação, operação e monitorização do OpenEMS Edge e OpenEMS UI",
+      "nl": "Installatie, bediening en bewaking van OpenEMS Edge en OpenEMS UI",
+      "fr": "Installation, exploitation et surveillance d’OpenEMS Edge et OpenEMS UI",
+      "it": "Installazione, gestione e monitoraggio di OpenEMS Edge e OpenEMS UI",
+      "es": "Instalación, funcionamiento y supervisión de OpenEMS Edge y OpenEMS UI",
+      "pl": "Instalacja, obsługa i monitorowanie OpenEMS Edge oraz OpenEMS UI",
+      "uk": "Встановлення, керування та моніторинг OpenEMS Edge і OpenEMS UI",
+      "zh-cn": "安装、运行和监控 OpenEMS Edge 与 OpenEMS UI"
+    },
+    "keywords": ["OpenEMS", "energy management", "EMS", "energy", "Java"],
+    "news": {
+      "0.1.2": {
+        "en": "Initial release with managed Java 21, OpenEMS Edge, OpenEMS UI, instance link and lifecycle controls.",
+        "de": "Erste Version mit verwaltetem Java 21, OpenEMS Edge, OpenEMS UI, Instanzlink und Prozesssteuerung.",
+        "ru": "Первый выпуск с управляемой Java 21, OpenEMS Edge, OpenEMS UI, ссылкой экземпляра и управлением процессом.",
+        "pt": "Primeira versão com Java 21 gerido, OpenEMS Edge, OpenEMS UI, ligação de instância e controlos de processo.",
+        "nl": "Eerste versie met beheerde Java 21, OpenEMS Edge, OpenEMS UI, instantielink en procesbesturing.",
+        "fr": "Première version avec Java 21 géré, OpenEMS Edge, OpenEMS UI, lien d’instance et commandes de processus.",
+        "it": "Prima versione con Java 21 gestito, OpenEMS Edge, OpenEMS UI, collegamento istanza e controlli di processo.",
+        "es": "Primera versión con Java 21 administrado, OpenEMS Edge, OpenEMS UI, enlace de instancia y controles de proceso.",
+        "pl": "Pierwsza wersja z zarządzaną Javą 21, OpenEMS Edge, OpenEMS UI, linkiem instancji i sterowaniem procesem.",
+        "uk": "Перший випуск із керованою Java 21, OpenEMS Edge, OpenEMS UI, посиланням екземпляра та керуванням процесом.",
+        "zh-cn": "首个版本，包含托管 Java 21、OpenEMS Edge、OpenEMS UI、实例链接和进程控制。"
+      }
     },
     "authors": ["TheBam"],
     "licenseInformation": { "type": "free", "license": "MIT" },
@@ -26,8 +63,8 @@
       }
     },
     "adminUI": { "config": "json" },
-    "dependencies": [{ "js-controller": ">=6.0.0" }],
-    "globalDependencies": [{ "admin": ">=7.0.0" }]
+    "dependencies": [{ "js-controller": ">=6.0.11" }],
+    "globalDependencies": [{ "admin": ">=7.6.20" }]
   },
   "native": {
     "installOnSave": false,

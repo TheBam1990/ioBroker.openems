@@ -4,21 +4,41 @@
   "items": {
     "intro": {
       "type": "staticText",
+      "xs": 12,
+      "sm": 12,
+      "md": 12,
+      "lg": 12,
+      "xl": 12,
       "newLine": true,
       "text": "OpenEMS wird erst nach Ihrer ausdrücklichen Auswahl installiert. Der Adapter verwaltet OpenEMS Edge, eine eigene Java-21-Laufzeit und die offizielle OpenEMS UI vollständig im Datenordner der Instanz."
     },
     "installOnSave": {
       "type": "checkbox",
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 4,
       "label": "OpenEMS nach dem Speichern installieren oder aktualisieren",
       "newLine": true
     },
     "autoStart": {
       "type": "checkbox",
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 4,
       "label": "OpenEMS Edge mit dem Adapter starten",
       "newLine": true
     },
     "uiPort": {
       "type": "number",
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4,
+      "xl": 3,
       "label": "Port der OpenEMS-Weboberfläche",
       "min": 1024,
       "max": 65535,
@@ -26,6 +46,11 @@
     },
     "edgeWebsocketPort": {
       "type": "number",
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4,
+      "xl": 3,
       "label": "OpenEMS Edge Websocket-Port",
       "min": 1024,
       "max": 65535,
@@ -33,6 +58,11 @@
     },
     "maxMemoryMb": {
       "type": "number",
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4,
+      "xl": 3,
       "label": "Maximaler Arbeitsspeicher für OpenEMS Edge (MiB)",
       "min": 256,
       "max": 2048,
@@ -40,6 +70,11 @@
     },
     "checkUpdatesHours": {
       "type": "number",
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4,
+      "xl": 3,
       "label": "Intervall der Versionsprüfung (Stunden, 0 = aus)",
       "min": 0,
       "max": 720,
@@ -47,6 +82,11 @@
     },
     "warning": {
       "type": "staticText",
+      "xs": 12,
+      "sm": 12,
+      "md": 12,
+      "lg": 12,
+      "xl": 12,
       "newLine": true,
       "text": "Hinweis: OpenEMS Edge benötigt je nach Konfiguration erheblich Arbeitsspeicher. Hardware-Komponenten und Regelstrategien werden anschließend in der OpenEMS UI eingerichtet."
     }
