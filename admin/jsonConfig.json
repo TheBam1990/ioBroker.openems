@@ -1,0 +1,54 @@
+{
+  "type": "panel",
+  "i18n": false,
+  "items": {
+    "intro": {
+      "type": "staticText",
+      "newLine": true,
+      "text": "OpenEMS wird erst nach Ihrer ausdrücklichen Auswahl installiert. Der Adapter verwaltet OpenEMS Edge, eine eigene Java-21-Laufzeit und die offizielle OpenEMS UI vollständig im Datenordner der Instanz."
+    },
+    "installOnSave": {
+      "type": "checkbox",
+      "label": "OpenEMS nach dem Speichern installieren oder aktualisieren",
+      "newLine": true
+    },
+    "autoStart": {
+      "type": "checkbox",
+      "label": "OpenEMS Edge mit dem Adapter starten",
+      "newLine": true
+    },
+    "uiPort": {
+      "type": "number",
+      "label": "Port der OpenEMS-Weboberfläche",
+      "min": 1024,
+      "max": 65535,
+      "newLine": true
+    },
+    "edgeWebsocketPort": {
+      "type": "number",
+      "label": "OpenEMS Edge Websocket-Port",
+      "min": 1024,
+      "max": 65535,
+      "newLine": true
+    },
+    "maxMemoryMb": {
+      "type": "number",
+      "label": "Maximaler Arbeitsspeicher für OpenEMS Edge (MiB)",
+      "min": 256,
+      "max": 2048,
+      "newLine": true
+    },
+    "checkUpdatesHours": {
+      "type": "number",
+      "label": "Intervall der Versionsprüfung (Stunden, 0 = aus)",
+      "min": 0,
+      "max": 720,
+      "newLine": true
+    },
+    "warning": {
+      "type": "staticText",
+      "newLine": true,
+      "text": "Hinweis: OpenEMS Edge benötigt je nach Konfiguration erheblich Arbeitsspeicher. Hardware-Komponenten und Regelstrategien werden anschließend in der OpenEMS UI eingerichtet."
+    }
+  }
+}

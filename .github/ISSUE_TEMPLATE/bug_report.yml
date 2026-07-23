@@ -1,0 +1,47 @@
+name: Bug report
+description: Report a reproducible problem with the adapter
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove passwords, tokens, serial numbers and public IP addresses from logs before submitting them.
+  - type: input
+    id: adapter-version
+    attributes:
+      label: Adapter version
+      placeholder: 0.1.2
+    validations:
+      required: true
+  - type: input
+    id: iobroker-version
+    attributes:
+      label: ioBroker js-controller version
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system and architecture
+      placeholder: Debian 12, x86_64
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem description
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant ioBroker logs
+      render: shell

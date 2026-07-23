@@ -1,0 +1,44 @@
+{
+  "common": {
+    "name": "openems",
+    "version": "0.1.2",
+    "titleLang": { "en": "OpenEMS", "de": "OpenEMS" },
+    "desc": {
+      "en": "One-click installation, operation and monitoring of OpenEMS Edge and OpenEMS UI",
+      "de": "Ein-Klick-Installation, Betrieb und Überwachung von OpenEMS Edge und OpenEMS UI"
+    },
+    "authors": ["TheBam"],
+    "licenseInformation": { "type": "free", "license": "MIT" },
+    "platform": "Javascript/Node.js",
+    "mode": "daemon",
+    "type": "energy",
+    "tier": 2,
+    "compact": false,
+    "enabled": true,
+    "connectionType": "local",
+    "dataSource": "push",
+    "icon": "openems.svg",
+    "extIcon": "https://raw.githubusercontent.com/TheBam1990/ioBroker.openems/main/admin/openems.svg",
+    "readme": "https://github.com/TheBam1990/ioBroker.openems/blob/main/README.md",
+    "localLinks": {
+      "_default": {
+        "link": "http://%ip%:%uiPort%"
+      }
+    },
+    "adminUI": { "config": "json" },
+    "dependencies": [{ "js-controller": ">=6.0.0" }],
+    "globalDependencies": [{ "admin": ">=7.0.0" }]
+  },
+  "native": {
+    "installOnSave": false,
+    "autoStart": true,
+    "uiPort": 8090,
+    "edgeWebsocketPort": 8075,
+    "maxMemoryMb": 512,
+    "checkUpdatesHours": 24
+  },
+  "protectedNative": [],
+  "encryptedNative": [],
+  "objects": [],
+  "instanceObjects": []
+}

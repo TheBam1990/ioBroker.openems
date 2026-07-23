@@ -1,0 +1,27 @@
+{
+  "name": "iobroker.openems",
+  "version": "0.1.2",
+  "description": "Install, run and monitor OpenEMS Edge directly from ioBroker",
+  "author": "TheBam",
+  "license": "MIT",
+  "main": "main.js",
+  "engines": { "node": ">=20" },
+  "keywords": ["ioBroker", "OpenEMS", "energy management", "OpenEMS Edge"],
+  "homepage": "https://github.com/TheBam1990/ioBroker.openems",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheBam1990/ioBroker.openems.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheBam1990/ioBroker.openems/issues"
+  },
+  "files": ["admin", "io-package.json", "main.js", "README.md", "README_DE.md", "CHANGELOG.md", "LICENSE"],
+  "dependencies": {
+    "@iobroker/adapter-core": "^3.3.2"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node --check main.js && node --test test/*.test.js",
+    "package": "npm pack --dry-run"
+  }
+}
