@@ -21,6 +21,8 @@
   },
   "scripts": {
     "test": "node --test test/*.test.js",
+    "test:package": "node --test test/*.test.js",
+    "test:integration": "node --test test/*.test.js",
     "check": "node --check main.js && node --test test/*.test.js",
     "lint": "node --check main.js",
     "package": "npm pack --dry-run"

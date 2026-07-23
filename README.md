@@ -83,7 +83,10 @@ OpenEMS and its bundled components retain their respective upstream licenses. Th
 - ioBroker Admin instance link and runtime status data points
 - Linux x64 and ARM64 support
 
-See [CHANGELOG.md](CHANGELOG.md) for the complete development history.
+Earlier changes:
+
+- 0.1.1: provider-specific download headers for Eclipse Adoptium
+- 0.1.0: initial adapter structure and OpenEMS lifecycle manager
 
 ## License
 
